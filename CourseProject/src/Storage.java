@@ -4,6 +4,15 @@ public class Storage {
     private float maxValue;
     private float fullness;
 
+    public Storage(String id){
+        if (id.length() == 6) {
+            this.id = id;
+        }
+        else{
+            System.out.println("Wrong ID");
+        }
+    }
+
     public String getId() {
         return id;
     }

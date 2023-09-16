@@ -8,6 +8,14 @@ public class Cargo {
     private String companyId;
     private String storageId;
 
+    public Cargo(String id){
+        if (id.length() == 10) {
+            this.id = id;
+        }
+        else{
+            System.out.println("Wrong ID");
+        }
+    }
     public String getId() {
         return id;
     }

@@ -2,6 +2,14 @@ public class Company {
     private String id;
     private String companyName;
 
+    public Company(String id){
+        if (id.length() == 4) {
+            this.id = id;
+        }
+        else{
+            System.out.println("Wrong ID");
+        }
+    }
     public String getId() {
         return id;
     }

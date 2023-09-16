@@ -8,6 +8,14 @@ public class Transport {
     private double passedDistance;
     private String storageNumber;
 
+    public Transport(String id){
+        if (id.length() == 9) {
+            this.id = id;
+        }
+        else{
+            System.out.println("Wrong ID");
+        }
+    }
     public String getId() {
         return id;
     }

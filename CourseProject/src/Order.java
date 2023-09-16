@@ -8,6 +8,14 @@ public class Order {
     private String storageId2;
     private String transportId;
 
+    public Order(String id){
+        if (id.length() == 5) {
+            this.id = id;
+        }
+        else{
+            System.out.println("Wrong ID");
+        }
+    }
     public String getId() {
         return id;
     }
